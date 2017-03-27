@@ -296,13 +296,25 @@
                     <div class="radio">
                         <label for="radios-0">
                             <input name="other" id="radios-0" value="1" checked="checked" type="radio">
-                            Oui
+                            Non
                         </label>
                     </div>
                     <div class="radio">
                         <label for="radios-1">
                             <input name="other" id="radios-1" value="2" type="radio">
-                            Non
+                            Auchan
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="radios-0">
+                            <input name="other" id="radios-2" value="3" checked="checked" type="radio">
+                            Leclerc
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="radios-0">
+                            <input name="other" id="radios-3" value="4" checked="checked" type="radio">
+                            Autres
                         </label>
                     </div>
                 </div>

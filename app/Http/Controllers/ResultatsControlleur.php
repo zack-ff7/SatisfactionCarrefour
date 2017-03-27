@@ -69,7 +69,7 @@ class ResultatsControlleur extends Controller
         }
 
         $other=array();
-        for($i=0;$i<2;$i++) {
+        for($i=0;$i<4;$i++) {
             $y=$i+1;
             $other[$i] = DB::table('echantillon')->where('other','=', $y)->count();
         }

@@ -503,46 +503,64 @@
 
     Highcharts.chart('other', {
         chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: 0,
-            plotShadow: false
-        },
-        title: {
-            text: 'Autres  <br>Magasins',
-            align: 'center',
-            verticalAlign: 'middle',
-            y: 40
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                dataLabels: {
-                    enabled: true,
-                    distance: -50,
-                    style: {
-                        fontWeight: 'bold',
-                        color: 'white'
-                    }
-                },
-                startAngle: -90,
-                endAngle: 90,
-                center: ['50%', '75%']
+            type: 'column',
+            options3d: {
+                enabled: true,
+                alpha: 15,
+                beta: 15,
+                viewDistance: 25,
+                depth: 40
             }
         },
+
+        title: {
+            text: 'Autres magasins ?',
+        },
+
+        xAxis: {
+            categories: ['Magasins']
+        },
+
+        yAxis: {
+            allowDecimals: false,
+            min: 0,
+            title: {
+                text: 'Nombre'
+            }
+        },
+
+        tooltip: {
+            headerFormat: '<b>{point.key}</b><br>',
+            pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: {point.y} / {point.stackTotal}'
+        },
+
+        plotOptions: {
+            column: {
+
+                depth: 40
+            }
+        },
+
         series: [{
-            type: 'pie',
-            name: 'Satisfaction',
-            innerSize: '50%',
-            data: [
-                ['Oui', {{$other[0]}}],
-                ['Non',{{$other[1]}}]
+            name: 'Non',
+            data: [{{$other[0]}}],
 
+        }, {
+            name: 'Auchan',
+            data: [{{$other[1]}}],
 
-            ]
+        }, {
+            name: 'Leclerc',
+            data: [{{$other[2]}}],
+            stack: 'female'
+        }, {
+            name: 'Autre',
+            data: [{{$other[3]}}],
+
         }]
     });
+
+
 
 
 
