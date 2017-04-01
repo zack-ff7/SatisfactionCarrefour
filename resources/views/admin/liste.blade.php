@@ -560,7 +560,7 @@
 
         }, {
             name: 'Leader Price',
-            data: [{{$other[3]}}],
+            data: [{{$other[4]}}],
 
 
         }]

@@ -75,7 +75,7 @@ class ResultatsControlleur extends Controller
         }
 
         $mdd=array();
-        for($i=0;$i<4;$i++) {
+        for($i=0;$i<5;$i++) {
             $y=$i+1;
             $mdd[$i] = DB::table('echantillon')->where('mdd','=', $y)->count();
         }
