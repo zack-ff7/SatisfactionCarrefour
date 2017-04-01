@@ -546,16 +546,22 @@
             data: [{{$other[0]}}],
 
         }, {
-            name: 'Auchan',
+            name: 'Leclerc',
             data: [{{$other[1]}}],
 
         }, {
-            name: 'Leclerc',
+            name: 'Carrefour Contact',
             data: [{{$other[2]}}],
             stack: 'female'
         }, {
-            name: 'Autre',
+            name: 'Liddle',
             data: [{{$other[3]}}],
+
+
+        }, {
+            name: 'Leader Price',
+            data: [{{$other[3]}}],
+
 
         }]
     });

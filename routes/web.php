@@ -15,3 +15,7 @@ Route::get('/','QuestionnaireControlleur@index');
 Route::post('envoi','QuestionnaireControlleur@sendQuestion');
 Route::get('admin_liste','ResultatsControlleur@index');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

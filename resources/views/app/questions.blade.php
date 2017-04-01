@@ -302,19 +302,25 @@
                     <div class="radio">
                         <label for="radios-1">
                             <input name="other" id="radios-1" value="2" type="radio">
-                            Auchan
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label for="radios-0">
-                            <input name="other" id="radios-2" value="3" checked="checked" type="radio">
                             Leclerc
                         </label>
                     </div>
                     <div class="radio">
                         <label for="radios-0">
+                            <input name="other" id="radios-2" value="3" checked="checked" type="radio">
+                            Carrefour Contact
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="radios-0">
                             <input name="other" id="radios-3" value="4" checked="checked" type="radio">
-                            Autres
+                            Liddle
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label for="radios-1">
+                            <input name="other" id="radios-4" value="5" type="radio">
+                           Leader Price
                         </label>
                     </div>
                 </div>
