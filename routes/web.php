@@ -13,7 +13,10 @@
 
 Route::get('/','QuestionnaireControlleur@index');
 Route::post('envoi','QuestionnaireControlleur@sendQuestion');
-Route::get('admin_liste','ResultatsControlleur@index');
+
+Route::group(array('prefix' => 'admin', 'middleware' => ['auth', 'web']), function () {
+Route::get('liste','ResultatsControlleur@index');
+});
 
 
 Auth::routes();

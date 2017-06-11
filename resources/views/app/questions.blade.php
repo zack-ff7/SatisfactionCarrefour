@@ -8,7 +8,6 @@
         {!! method_field('POST') !!}
             <input type="hidden" name="_token" value="{{ csrf_token() }}" />
             <!-- Form Name -->
-            <legend>Etude de satisfaction carrefour</legend>
 
             <!-- Multiple Radios -->
             <div class="form-group">
